@@ -1,0 +1,5 @@
+|___FASTAPI
+    |--main.puy
+    |--app
+        |--__init__.py
+        |--app.py
