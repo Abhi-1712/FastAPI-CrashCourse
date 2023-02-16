@@ -26,7 +26,14 @@ todos = [
 ]
 
 
-
 # Post --> Create Todo
+@app.post("/todo",tags=["todos"])
+async def add_todo(todo:dict) -> dict:
+    todos.append(todo)
+    return{
+        "data":"A todo has been added! "
+    }
+
+
 # Put --> Update Todo
 # Delete --> Delete Todo
